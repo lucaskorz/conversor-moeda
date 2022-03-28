@@ -14,7 +14,7 @@ export function ControllableStates(props) {
         onChange={props.onChange}
         sx={{ width: 300 }}
         renderInput={(params) => (
-          <TextField {...params} label="Selecione a Moeda" />
+          <TextField {...params} label="Selecione a Moedateste" />
         )}
       />
     </div>
