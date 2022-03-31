@@ -29,4 +29,4 @@ __Melhoria 1__, _melhoria 2_
 
 #### Imagem local
 
-![Logo do Google](img/img.png)
+![Logo do Google](src/img/img.jpg)
