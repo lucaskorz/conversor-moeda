@@ -26,3 +26,7 @@ __Melhoria 1__, _melhoria 2_
     3. CSS diferente para grupo de cliente
 3. Integração com outros pagamentos
 4. Sistema de bônus primeira compra
+
+#### Imagem local
+
+![Logo do Google](img/img.png)
