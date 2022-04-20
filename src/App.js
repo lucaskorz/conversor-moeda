@@ -1,12 +1,11 @@
 import PageInitial from './components/page-initial/Page-Initial'
-//import axios from 'axios'
 
-const ThemeContexto = './ThemeContext';
+import { ThemeProvider } from './context/ThemeContext'
 
 export default function App() {
   return (
-    <ThemeContexto>
+    <ThemeProvider>
       <PageInitial/>
-    </ThemeContexto>
+    </ThemeProvider>
   );
 }

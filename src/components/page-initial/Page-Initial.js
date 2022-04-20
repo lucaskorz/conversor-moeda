@@ -4,9 +4,8 @@ import Stack from "@mui/material/Stack";
 import { NumberFormatCustom } from "../number-format/number-format";
 import { ControlledOpenSpeedDial } from "../speed-dial/speed-dial";
 import { UnstyledButtonCustom } from "../Button/Button";
-import { ControllableStates } from "../select/select";
 import { getConversao } from "../../service/ApiService";
-import { BasicAlerts } from "../BasicAlerts";
+import { Title } from './styles'
 
 export default function PageInitial() {
   const [converter, setConverter] = useState("BRL");
@@ -20,23 +19,15 @@ export default function PageInitial() {
   async function handleConvert() {
     const resposta = await getConversao(convertido, converter);
 
-    // var keys = Object.keys(resposta.data);
- 
-    // console.log(keys[0]);
-    // const teste = keys[0];
-    // console.log()
-    
-
     setvalConvertido(resposta.data[Object.keys(resposta.data)[0]]);
-    // setvalConvertido(0.184526);
-    
-
+ 
     const valorFinal = valConvertido * parseInt(valConverter);
     return setValMultiplicado(valorFinal);
   }
 
   return (
     <>
+      <Title>Teste</Title>
       <div className="section">
         <div className="btt">
           <UnstyledButtonCustom
